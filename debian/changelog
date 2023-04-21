@@ -1,4 +1,4 @@
-base-files (12.4+ragnarok01) -dev; urgency=medium
+base-files (12.4+ragnarok01) dev; urgency=medium
 
   * Initial upload of Ragnarok 0.1's base-files package.
 
