@@ -3,7 +3,7 @@ base-files (12.4+ragnarok01-1) unstable; urgency=medium
   * Revision 1.
   * Move from -dev to -current.
 
- -- Ian LeCorbeau <I-LeCorbeau@protonmail.com> Mon, 17 Jul 2023 12:57:15 -0400
+ -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Mon, 17 Jul 2023 12:57:15 -0400
 
 base-files (12.4+ragnarok01) dev; urgency=medium
 
