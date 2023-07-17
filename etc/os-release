@@ -1,8 +1,8 @@
-PRETTY_NAME="Ragnarok 0.1 (-dev)"
+PRETTY_NAME="Ragnarok 01 (-current)"
 NAME="Ragnarok"
-VERSION_ID="0.1"
-VERSION="0.1 (-dev)"
-VERSION_CODENAME=dev
+VERSION_ID="01"
+VERSION="01 (-current)"
+VERSION_CODENAME=-current
 ID=ragnarok
 ID_LIKE=debian
 HOME_URL="https://RagnarokOS.github.io/"
