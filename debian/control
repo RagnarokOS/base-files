@@ -3,12 +3,12 @@ Section: admin
 Priority: required
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 XSBC-Original-Maintainer: Santiago Vila <sanvila@debian.org>
-Standards-Version: 4.6.2
+Standards-Version: 4.7.0
 Build-Depends: debhelper-compat (= 13), debhelper (>= 13.10~)
 Rules-Requires-Root: binary-targets
 
 Package: base-files
-Provides: base
+Provides: base, usr-is-merged
 Architecture: any
 Pre-Depends: awk
 Depends: ${misc:Depends}

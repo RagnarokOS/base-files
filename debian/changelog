@@ -1,62 +1,71 @@
-base-files (999+ragnarok01-5) stable; urgency=medium
+base-files (999+ragnarok02) unstable; urgency=medium
 
-  * Bump /etc/debian_version to 12.8 match with latest Bookworm point release.
+  * Bump to new version.
 
- -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Sat, 09 Nov 2024 12:27:01 -0500
+ -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Mon, 16 Dec 2024 13:18:26 -0500
 
-base-files (999+ragnarok01-4) stable; urgency=medium
+base-files (13.6) unstable; urgency=medium
 
-  * Bump /etc/debian_version to 1.7 match with latest Bookworm point release.
+  * Change default dot.profile to not use mesg anymore. Closes: #1088011.
 
- -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Sat, 31 Aug 2024 10:35:19 -0400
+ -- Santiago Vila <sanvila@debian.org>  Fri, 22 Nov 2024 15:40:00 +0100
 
-base-files (999+ragnarok01-3) stable; urgency=medium
+base-files (13.5) unstable; urgency=medium
 
-  * Bump /etc/debian_version to match with latest Bookworm point release.
+  [ Chris Hofstaedtler ]
+  * Fix typo in preinst: lib64 -> libx32. Closes: #1077863.
+  [ Helmut Grohne ]
+  * Work around /lib64 link created by systemd-nspawn. Closes: #1077866.
+  [ Santiago Vila ]
+  * Add lintian overrides for the directories that have become symlinks.
 
- -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Sat, 29 Jun 2024 13:21:20 -0400
+ -- Santiago Vila <sanvila@debian.org>  Sun, 04 Aug 2024 23:30:00 +0200
 
-base-files (999+ragnarok01-2) stable; urgency=medium
+base-files (13.4) unstable; urgency=medium
 
-  * 01 now stable.
+  [ Helmut Grohne ]
+  * Tighten the merged-/usr preinst check. Closes: #1076491.
+  [ Santiago Vila ]
+  * Raise Standards-Version to 4.7.0.
 
- -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Tue, 14 May 2024 11:31:21 -0400
+ -- Santiago Vila <sanvila@debian.org>  Thu, 01 Aug 2024 12:30:00 +0200
 
-base-files (999+ragnarok01-1) unstable; urgency=medium
+base-files (13.3) unstable; urgency=medium
 
-  * Bump /etc/debian_version to 12.5
+  [ Helmut Grohne ]
+  * DEP17: Install /usr-merge aliasing symlinks. Closes: #1064459.
 
- -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Mon, 12 Feb 2024 11:08:00 -0500
+ -- Santiago Vila <sanvila@debian.org>  Thu, 06 Jun 2024 00:35:00 +0200
 
-base-files (999+ragnarok01) unstable; urgency=medium
+base-files (13.2) unstable; urgency=medium
 
-  * Initial build of base-files for Ragnarok
+  * Document that /etc/profile is not a conffile anymore. Closes: #868095.
+  * Use a regexp to source files in /etc/profile.d. The behaviour should now be
+    well defined and consistent. Closes: #885414, #1069279.
+  * Add NEWS.Debian entry for the above.
+  * Document that the default umask is defined in /etc/login.defs. Closes: #983606.
+  * Add #DEBHELPER# token to postinst to make lintian happy.
+  * Make binary package to be git-reproducible.
 
- -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Wed, 20 Dec 2023 12:49:00 -0500
+ -- Santiago Vila <sanvila@debian.org>  Fri, 03 May 2024 18:15:00 +0200
 
-base-files (12.4+deb12u4) bookworm; urgency=medium
+base-files (13.1) unstable; urgency=medium
 
-  * Change /etc/debian_version to 12.4, for Debian 12.4 point release.
+  * Rename postinst.in to postinst. Use dh_installdeb token feature instead.
+  * Add /usr/local/libexec. Closes: #994220.
+  * Machine-readable copyright file. Closes: #1020828.
+  * Add a debian/gbp.conf file.
 
- -- Adam D Barratt <adam@adam-barratt.org.uk>  Sat, 09 Dec 2023 21:08:29 +0000
+ -- Santiago Vila <sanvila@debian.org>  Wed, 17 Apr 2024 12:45:00 +0200
 
-base-files (12.4+deb12u3) bookworm; urgency=medium
+base-files (13) unstable; urgency=medium
 
-  * Change /etc/debian_version to 12.3, for Debian 12.3 point release.
+  * Change issue, issue.net, debian_version and os-release
+    to read "trixie/sid".
+  * Change VERSION_CODENAME in os-release to read "trixie".
+  * Drop VERSION and VERSION_ID from os-release.
 
- -- Santiago Vila <sanvila@debian.org>  Sat, 02 Dec 2023 23:34:00 +0100
-
-base-files (12.4+deb12u2) bookworm; urgency=medium
-
-  * Change /etc/debian_version to 12.2, for Debian 12.2 point release.
-
- -- Santiago Vila <sanvila@debian.org>  Fri, 29 Sep 2023 22:04:00 +0200
-
-base-files (12.4+deb12u1) bookworm; urgency=medium
-
-  * Change /etc/debian_version to 12.1, for Debian 12.1 point release.
-
- -- Santiago Vila <sanvila@debian.org>  Fri, 14 Jul 2023 18:00:00 +0200
+ -- Santiago Vila <sanvila@debian.org>  Sun, 11 Jun 2023 17:00:00 +0200
 
 base-files (12.4) unstable; urgency=medium
 
