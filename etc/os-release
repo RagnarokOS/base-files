@@ -1,8 +1,6 @@
-PRETTY_NAME="Ragnarok 01 (Dyeus)"
+PRETTY_NAME="Ragnarok -current"
 NAME="Ragnarok"
-VERSION_ID="01"
-VERSION="01 (Dyeus)"
-VERSION_CODENAME=Dyeus
+VERSION_CODENAME=-current
 ID=ragnarok
 ID_LIKE=debian
 HOME_URL="https://RagnarokOS.github.io/"
